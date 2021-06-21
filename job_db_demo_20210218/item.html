@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>求人サイト向け 無料ホームページテンプレート tp_job3</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="ここにサイト説明を入れます">
+<meta name="keywords" content="キーワード１,キーワード２,キーワード３,キーワード４,キーワード５">
+<link rel="stylesheet" href="css/style.css">
+<script src="js/openclose.js"></script>
+<script src="js/fixmenu.js"></script>
+<script src="js/fixmenu_pagetop.js"></script>
+<script src="js/ddmenu_min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css">
+<script src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+<script>
+function set_image(img, title)
+{
+	document.getElementById('bukken_image').src = img;
+	document.getElementById('bukken_title').innerHTML = title;
+}
+</script>
+</head>
+
+<body>
+
+<header>
+<div class="inner">
+<h1 id="logo"><a href="index_.html"><img src="images/S__1171464.jpg" alt="SAMPLE JOB SITE"></a></h1>
+<p id="tel"><span></span></p>
+</div>
+</header>
+
+<!--PC用（901px以上端末）メニュー-->
+<nav id="menubar" class="nav-fix-pos">
+<ul class="inner">
+<li><a href="index_.html">ホーム<span>Home</span></a></li>
+<li><a href="list_base.html">求人一覧<span>Recruit</span></a>
+    <ul class="ddmenu">
+        <li><a href="choki_intern.html">長期インターン</a></li>
+        <li><a href="tanki_intern.html">短期インターン</a></li>
+        <li><a href="syukatu_nomikai.html">就活飲み会</a></li>
+        <li><a href="syukatu.futsal.html">就活フットサル</a></li>
+	</ul>
+</li>
+<li><a href="info.html">掲載のご案内<span>Information</span></a></li>
+<li><a href="faq.html">よく頂く質問<span>Faq</span></a></li>
+<li><a href="link.html">メディア記事<span>Media</span></a></li>
+<li><a href="toiawase.html">お問い合わせ<span>Contact</span></a></li>
+</ul>
+</nav>
+<!--小さな端末用（900px以下端末）メニュー-->
+<nav id="menubar-s">
+<ul>
+<li><a href="index_.html">ホーム<span>Home</span></a></li>
+<li><a href="list_base.html">求人一覧<span>Recruit</span></a></li>
+<li><a href="info.html">掲載のご案内<span>Information</span></a></li>
+<li><a href="faq.html">よく頂く質問<span>Faq</span></a></li>
+<li><a href="link.html">メディア記事<span>Media</span></a></li>
+<li><a href="toiawase.html">お問い合わせ<span>Contact</span></a></li>
+</ul>
+</nav>
+
+<div id="contents" class="inner">
+<div id="contents-in">
+
+<div id="main">
+
+<article class="list">
+
+<h2>{val item/title}</h2>
+
+<!--{def item/new_flag}--><span class="newicon">NEW</span><!--{/def}-->
+<!--{def item/update_flag}--><span class="upicon">UP</span><!--{/def}-->
+<!--{def item/recommend1}--><span class="option1">人気</span><!--{/def}-->
+<!--{def item/recommend2}--><span class="option2">急募</span><!--{/def}-->
+<!--{def item/recommend3}--><span class="option3">終了</span><!--{/def}-->
+
+<!--{def item/contents}-->
+<p>{val item/contents}</p>
+<!--{/def}-->
+
+<figure class="c mb15">
+<!--{def item/image1_file}-->
+<img src="user_data/{val item/image1_file}" id="bukken_image" class="mb15" alt=""><br>
+<p id="bukken_title">{val item/image1_title}</p>
+<!--{/def}-->
+<!--{def item/image1}-->
+<a href="javascript:set_image('user_data/{val item/image1_file}', '{val item/image1_title}');"><img src="user_data/{val item/image1_file}" width="70" alt=""></a>
+<!--{/def}-->
+<!--{def item/image2}-->
+<a href="javascript:set_image('user_data/{val item/image2_file}', '{val item/image2_title}');"><img src="user_data/{val item/image2_file}" width="70" alt=""></a>
+<!--{/def}-->
+<!--{def item/image3}-->
+<a href="javascript:set_image('user_data/{val item/image3_file}', '{val item/image3_title}');"><img src="user_data/{val item/image3_file}" width="70" alt=""></a>
+<!--{/def}-->
+<!--{def item/image4}-->
+<a href="javascript:set_image('user_data/{val item/image4_file}', '{val item/image4_title}');"><img src="user_data/{val item/image4_file}" width="70" alt=""></a>
+<!--{/def}-->
+<!--{def item/image5}-->
+<a href="javascript:set_image('user_data/{val item/image5_file}', '{val item/image5_title}');"><img src="user_data/{val item/image5_file}" width="70" alt=""></a>
+<!--{/def}-->
+<!--{def item/image6}-->
+<a href="javascript:set_image('user_data/{val item/image6_file}', '{val item/image6_title}');"><img src="user_data/{val item/image6_file}" width="70" alt=""></a>
+<!--{/def}-->
+<!--{def item/image7}-->
+<a href="javascript:set_image('user_data/{val item/image7_file}', '{val item/image7_title}');"><img src="user_data/{val item/image7_file}" width="70" alt=""></a>
+<!--{/def}-->
+<!--{def item/image8}-->
+<a href="javascript:set_image('user_data/{val item/image8_file}', '{val item/image8_title}');"><img src="user_data/{val item/image8_file}" width="70" alt=""></a>
+<!--{/def}-->
+<!--{def item/image9}-->
+<a href="javascript:set_image('user_data/{val item/image9_file}', '{val item/image9_title}');"><img src="user_data/{val item/image9_file}" width="70" alt=""></a>
+<!--{/def}-->
+<!--{def item/image10}-->
+<a href="javascript:set_image('user_data/{val item/image10_file}', '{val item/image10_title}');"><img src="user_data/{val item/image10_file}" width="70" alt=""></a>
+<!--{/def}-->
+<!--{def item/image11}-->
+<a href="javascript:set_image('user_data/{val item/image11_file}', '{val item/image11_title}');"><img src="user_data/{val item/image11_file}" width="70" alt=""></a>　
+<!--{/def}-->
+<!--{def item/image12}-->
+<a href="javascript:set_image('user_data/{val item/image12_file}', '{val item/image12_title}');"><img src="user_data/{val item/image12_file}" width="70" alt=""></a>　
+<!--{/def}-->
+<!--{def item/image13}-->
+<a href="javascript:set_image('user_data/{val item/image13_file}', '{val item/image13_title}');"><img src="user_data/{val item/image13_file}" width="70" alt=""></a>　
+<!--{/def}-->
+<!--{def item/image14}-->
+<a href="javascript:set_image('user_data/{val item/image14_file}', '{val item/image14_title}');"><img src="user_data/{val item/image14_file}" width="70" alt=""></a>　
+<!--{/def}-->
+<!--{def item/image15}-->
+<a href="javascript:set_image('user_data/{val item/image15_file}', '{val item/image15_title}');"><img src="user_data/{val item/image15_file}" width="70" alt=""></a>　
+<!--{/def}-->
+<!--{def item/image16}-->
+<a href="javascript:set_image('user_data/{val item/image16_file}', '{val item/image16_title}');"><img src="user_data/{val item/image16_file}" width="70" alt=""></a>　
+<!--{/def}-->
+<!--{def item/image17}-->
+<a href="javascript:set_image('user_data/{val item/image17_file}', '{val item/image17_title}');"><img src="user_data/{val item/image17_file}" width="70" alt=""></a>　
+<!--{/def}-->
+<!--{def item/image18}-->
+<a href="javascript:set_image('user_data/{val item/image18_file}', '{val item/image18_title}');"><img src="user_data/{val item/image18_file}" width="70" alt=""></a>　
+<!--{/def}-->
+<!--{def item/image19}-->
+<a href="javascript:set_image('user_data/{val item/image19_file}', '{val item/image19_title}');"><img src="user_data/{val item/image19_file}" width="70" alt=""></a>　
+<!--{/def}-->
+<!--{def item/image20}-->
+<a href="javascript:set_image('user_data/{val item/image20_file}', '{val item/image20_title}');"><img src="user_data/{val item/image20_file}" width="70" alt=""></a>　
+<!--{/def}-->
+</figure>
+
+<table class="ta1">
+<caption>求人内容</caption>
+<tr>
+<th>求人ナンバー</th>
+<td>No.{val item/info_id}
+<!--{def item/new_flag}--><span class="newicon">NEW</span><!--{/def}-->
+<!--{def item/update_flag}--><span class="upicon">UP</span><!--{/def}-->
+</td>
+</tr>
+<tr>
+<th>タイトル</th>
+<td>{val item/title}</td>
+</tr>
+<!--{def item/info1/value}-->
+<tr>
+<th>{val item/info1/title}</th>
+<td>{val item/info1/value}</td>
+</tr>
+<!--{/def}-->
+<!--{def item/info2/value}-->
+<tr>
+<th>{val item/info2/title}</th>
+<td>{val item/info2/value}</td>
+</tr>
+<!--{/def}-->
+<!--{def item/info3/value}-->
+<tr>
+<th>{val item/info3/title}</th>
+<td>{val item/info3/value}</td>
+</tr>
+<!--{/def}-->
+<!--{def item/info4/value}-->
+<tr>
+<th>{val item/info4/title}</th>
+<td>{val item/info4/value}</td>
+</tr>
+<!--{/def}-->
+<!--{def item/info5/value}-->
+<tr>
+<th>{val item/info5/title}</th>
+<td>{val item/info5/value}</td>
+</tr>
+<!--{/def}-->
+<!--{def item/info6/value}-->
+<tr>
+<th>{val item/info6/title}</th>
+<td>{val item/info6/value}</td>
+</tr>
+<!--{/def}-->
+<!--{def item/info7/value}-->
+<tr>
+<th>{val item/info7/title}</th>
+<td>{val item/info7/value}</td>
+</tr>
+<!--{/def}-->
+<!--{def item/info8/value}-->
+<tr>
+<th>{val item/info8/title}</th>
+<td>{val item/info8/value}</td>
+</tr>
+<!--{/def}-->
+<!--{def item/info9/value}-->
+<tr>
+<th>{val item/info9/title}</th>
+<td>{val item/info9/value}</td>
+</tr>
+<!--{/def}-->
+<!--{def item/info10/value}-->
+<tr>
+<th>{val item/info10/title}</th>
+<td>{val item/info10/value}</td>
+</tr>
+<!--{/def}-->
+</table>
+
+<table class="ta1">
+<caption>企業情報</caption>
+<!--{def item/info11/value}-->
+<tr>
+<th>{val item/info11/title}</th>
+<td>{val item/info11/value}</td>
+</tr>
+<!--{/def}-->
+<!--{def item/info12/value}-->
+<tr>
+<th>{val item/info12/title}</th>
+<td>{val item/info12/value}</td>
+</tr>
+<!--{/def}-->
+<!--{def item/info13/value}-->
+<tr>
+<th>{val item/info13/title}</th>
+<td>{val item/info13/value}</td>
+</tr>
+<!--{/def}-->
+<!--{def item/info14/value}-->
+<tr>
+<th>{val item/info14/title}</th>
+<td>{val item/info14/value}</td>
+</tr>
+<!--{/def}-->
+<!--{def item/info15/value}-->
+<tr>
+<th>{val item/info15/title}</th>
+<td>{val item/info15/value}</td>
+</tr>
+<!--{/def}-->
+<!--{def item/info16/value}-->
+<tr>
+<th>{val item/info16/title}</th>
+<td>{val item/info16/value}</td>
+</tr>
+<!--{/def}-->
+<!--{def item/info17/value}-->
+<tr>
+<th>{val item/info17/title}</th>
+<td>{val item/info17/value}</td>
+</tr>
+<!--{/def}-->
+<!--{def item/info18/value}-->
+<tr>
+<th>{val item/info18/title}</th>
+<td>{val item/info18/value}</td>
+</tr>
+<!--{/def}-->
+<!--{def item/info19/value}-->
+<tr>
+<th>{val item/info19/title}</th>
+<td>{val item/info19/value}</td>
+</tr>
+<!--{/def}-->
+<!--{def item/latlon}-->
+<tr>
+<th>地図</th>
+<td>
+<iframe src="https://maps.google.co.jp/maps?hl=ja&amp;ll={val item/latlon}&amp;q={val item/latlon}&amp;ie=UTF8&amp;t=m&amp&amp;z=14&amp;output=embed" width="600" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+</td>
+</tr>
+<!--{/def}-->
+<tr>
+<th>こだわり</th>
+<td>
+<!--{each item/special}-->
+<!--{def item/special/icon}-->
+<a href="?act=list&kind={val item/kind}&special{val item/special/value}={val item/special/value}"><img src="icon/{val item/special/icon}" alt="{val item/special/title}" title="{val item/special/title}"></a>
+<!--{/def}-->
+<!--{ndef item/special/icon}-->
+<span class="icon"><a href="?act=list&kind={val item/kind}&special{val item/special/value}={val item/special/value}">{val item/special/title}</a></span>
+<!--{/ndef}-->
+<!--{/each}-->
+</td>
+</tr>
+
+<!--{def item/pdf}-->
+<tr>
+<th>PDF資料</th>
+<td>
+<a href="?act=get_file&id={val item/pdf}">{val item/pdf_file/title}</a><br></td>
+</tr>
+<!--{/def}-->
+
+<!--{def image}-->
+<!--{each image}-->
+<tr>
+<th>{val image/file/title}</th>
+<td>
+<img src="user_data/{val image/file_file/save_name}" alt="{val image/file_file/title}">
+</td>
+</tr>
+<!--{/each}-->
+<!--{/def}-->
+
+<!--{def audio}-->
+<!--{each audio}-->
+<tr>
+<th>{val audio/file/title}</th>
+<td>
+<audio controls="" src="user_data/{val audio/file_file/save_name}">{val audio/file_file/title}</audio>
+</td>
+</tr>
+<!--{/each}-->
+<!--{/def}-->
+
+<!--{def video}-->
+<!--{each video}-->
+<tr>
+<th>{val video/file/title}</th>
+<td>
+<video controls="" src="user_data/{val video/file_file/save_name}">{val video/file_file/title}</video>
+</td>
+</tr>
+<!--{/each}-->
+<!--{/def}-->
+
+<!--{def panorama}-->
+<!--{each panorama}-->
+<tr>
+<th>{val panorama/file/title}</th>
+<td>
+<div class="ofx">
+<div id="panorama{val panorama/no}" class="panorama-img"></div>
+<script>
+pannellum.viewer('panorama{val panorama/no}' , {
+"type": "equirectangular",
+"panorama": "user_data/{val panorama/file_file/save_name}",
+"autoLoad": true
+});
+</script>
+</td>
+</tr>
+<!--{/each}-->
+<!--{/def}-->
+
+<!--{def other}-->
+<!--{each other}-->
+<tr>
+<th>{val other/file/title}</th>
+<td>
+<a href="?act=get_file&id={val other/file/value}">{val other/file_file/title}</a>
+</td>
+</tr>
+<!--{/each}-->
+<!--{/def}-->
+
+
+<tr>
+<th>更新日時</th>
+<td>
+登録：{val item/regdate/0}年{val item/regdate/1}月{val item/regdate/2}日 {val item/regtime/0}時{val item/regtime/1}分<br>
+更新：{val item/update/0}年{val item/update/1}月{val item/update/2}日 {val item/uptime/0}時{val item/uptime/1}分<br>
+</td>
+</tr>
+</table>
+
+<p class="c">
+<a href="?act=toiawase&id={val item/info_id}" class="btn">この求人に応募する</a>
+</p>
+
+</article>
+
+<p><a href="javascript:history.back()">&lt;&lt; 前のページに戻る</a></p>
+
+</div>
+<!--/#main-->
+
+<div id="sub">
+
+<nav>
+<h2>サイトメニュー</h2>
+<ul class="submenu">
+<li><a href="./">ホーム</a></li>
+<li><a href="info.html">掲載のご案内</a></li>
+<li><a href="faq.html">よく頂く質問</a></li>
+<li><a href="link.html">リンク</a></li>
+<li><a href="./?act=toiawase">お問い合わせ</a></li>
+<li><a href="company.html">会社概要</a></li>
+</ul>
+</nav>
+
+<nav>
+<h2>現在の求人</h2>
+<ul class="submenu">
+<li><a href="./?act=list&kind=1">飲食店の求人</a></li>
+<li><a href="./?act=list&kind=2">営業の求人</a></li>
+<li><a href="./?act=list&kind=3">接客・販売の求人</a></li>
+<li><a href="./?act=list&kind=4">事務の求人</a></li>
+</ul>
+</nav>
+
+<div class="box1">
+<h2 class="mb10">アクセス</h2>
+<p>東京都XX区XXXXビル３F<br>
+TEL：00-0000-0000<br>
+受付：00:00〜00:00<br>
+定休日：水曜日</p>
+</div>
+
+</div>
+<!--/#sub-->
+
+</div>
+<!--/#contents-in-->
+
+<div id="side">
+
+<div class="box1">
+
+<h2>人気業種</h2>
+
+<!--{each osusume}-->
+<div class="list-sub">
+<a href="?act=bukken&id={val osusume/info_id}">
+<h4>
+{val osusume/title}
+<!--{def osusume/new_flag}--><span class="newicon">NEW</span><!--{/def}-->
+<!--{def osusume/update_flag}--><span class="upicon">UP</span><!--{/def}-->
+</h4>
+<p>■{val osusume/info1/title}…{val osusume/info1/value}<br>
+■{val osusume/info2/title}…{val osusume/info2/value}<br>
+■{val osusume/info3/title}…{val osusume/info3/value}<br>
+</p>
+</a>
+</div>
+<!--{/each}-->
+
+</div>
+<!--/.box1-->
+
+<nav class="box1">
+<h2>Contents</h2>
+<ul class="submenu">
+<li><a href="#">メニューサンプル</a></li>
+<li><a href="#">メニューサンプル</a></li>
+<li><a href="#">メニューサンプル</a></li>
+<li><a href="#">メニューサンプル</a></li>
+<li><a href="#">メニューサンプル</a></li>
+</ul>
+</nav>
+
+<p>
+<a href="recruit.html"><img src="images/banner1.jpg" alt="採用情報" class="pc"></a>
+<a href="recruit.html"><img src="images/banner1_sh.jpg" alt="採用情報" class="sh"></a>
+</p>
+<p>上のバナー画像は、901px以上の端末と900px以下とで画像２種類が切り替わります。<br>
+<a href="company.html#banner">詳しい説明はこちら。</a></p>
+
+</div>
+<!--/#side-->
+
+</div>
+<!--/#contents-->
+
+<footer>
+
+    <div id="footermenu" class="inner">
+    <ul>
+    <li class="title">Makicker</li>
+    <li><a href="#">求人掲載のお申し込み</a></li>
+    </ul>
+    
+    <ul>
+    <li class="title"></li>
+    <li><a href="#">初めての方へ</a></li>
+    <li><a href="#">採用担当者様へ</a></li>
+    <li><a href="#"></a></li>
+    <li><a href="#"></a></li>
+    </ul>
+    
+    <ul>
+    <li class="title"></li>
+    <li><a href="company.html">運営会社情報</a></li>
+    <li><a href="toiawase.html">お問い合わせ</a></li>
+    <li><a href="#"></a></li>
+    </ul>
+    
+    <ul>
+    <li class="title">公式ライン</li>
+    <li><a href="line.html">友達追加</a></li>
+    </ul>
+    
+    </div>
+    <!--/footermenu-->
+    
+    <div id="copyright">
+    <small><a href="index_.html">Makicker</a> </small>
+    <span class="pr"><a href="https://template-party.com/" target="_blank"></a></span>
+    </div>
+    
+    </footer>
+
+<!--ページの上部に戻る「↑」ボタン-->
+<p class="nav-fix-pos-pagetop"><a href="#">↑</a></p>
+
+<!--メニュー開閉ボタン-->
+<div id="menubar_hdr" class="close"></div>
+<!--メニューの開閉処理条件設定　900px以下-->
+<script>
+if (OCwindowWidth() <= 900) {
+	open_close("menubar_hdr", "menubar-s");
+}
+</script>
+
+</body>
+</html>

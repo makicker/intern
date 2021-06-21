@@ -1,0 +1,61 @@
+@charset "utf-8";
+
+
+
+/*CSSスライドショーアニメーション設定
+---------------------------------------------------------------------------*/
+/*1枚目*/
+@keyframes slide1 {
+	0% {left: 110%;}
+	3% {left: 0%;}
+	20% {left: 0%;}
+	23% {left: -110%;}
+	100% {left: -110%;}
+}
+/*2枚目*/
+@keyframes slide2 {
+	0% {left: 110%;}
+	33% {left: 110%;}
+	36% {left: 0%;}
+	53% {left: 0%;}
+	56% {left: -110%;}
+	100% {left: -110%;}
+}
+/*3枚目*/
+@keyframes slide3 {
+	0% {left: 110%;}
+	66% {left: 110%;}
+	69% {left: 0%;}
+	86% {left: 0%;}
+	89% {left: -110%;}
+	100% {left: -110%;}
+}
+
+/*mainimg
+---------------------------------------------------------------------------*/
+/*画像ブロック*/
+#mainimg {
+	clear: left;width: 100%;position: relative;
+	background: #000;
+	overflow: hidden;
+}
+/*３枚画像の共通設定*/
+.slide1,.slide2,.slide3 {
+	animation-duration: 15s;	/*実行する時間。「s」は秒の事。*/
+	animation-iteration-count:infinite;		/*実行する回数。「infinite」は無限に繰り返す意味。*/
+	position: absolute;left:0px;top:0px;
+	animation-fill-mode: both;
+	animation-delay: 1s;
+}
+/*１枚目*/
+.slide1 {
+	animation-name: slide1;	/*上で設定しているキーフレーム（keyframes）の名前*/
+}
+/*２枚目*/
+.slide2 {
+	animation-name: slide2;	/*上で設定しているキーフレーム（keyframes）の名前*/
+}
+/*３枚目*/
+.slide3 {
+	animation-name: slide3;	/*上で設定しているキーフレーム（keyframes）の名前*/
+}
